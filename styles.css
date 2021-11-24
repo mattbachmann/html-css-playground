@@ -1,0 +1,26 @@
+body {
+  background: white;
+}
+
+.button {
+  font-size: 20px;
+  color: white;
+  background-color: blue;
+}
+
+a {
+  background-color: purple;
+}
+
+#nav div.pull-right a.button {
+  background-color: orangered;
+}
+
+/* :hover does not work, because above declaration is more specific */
+#nav a.button:hover {
+  background-color: yellow;
+}
+
+#nav div.pull-right a.button:hover {
+  background-color: green;
+}
